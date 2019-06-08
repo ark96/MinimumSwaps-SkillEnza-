@@ -1,0 +1,45 @@
+
+Minimum Swaps
+Jennifer has an array of integers and wants to find the minimum number of swaps required to bring the largest element to the middle of the array.
+
+Note that if n is odd, where n is the number of elements in the array, the middle is the (n + 1) / 2 position (indexing begins from 1); if n is even, then there are two numbers in the middle (the (n / 2) position and ((n / 2) + 1) positions)
+
+She can do it with arrays of a small number of elements but for large ones, she’s lost. Help her solve this problem.
+
+Constraints
+0 <= T <= 5000
+
+0 <= N <= 1000
+
+Input Format
+The first line contains an integer T indicating the number of test cases
+The first line of each test case contains an integer N
+The second Line contains N space separated integers
+Output Format
+Output the minimum number of swaps required to get the largest integer to the middle where middle is defined as above. If there are several largest integers, output the minimum required to get any one of them to the middle position.
+
+Sample Input
+4
+5
+1 5 11 20 31
+1
+8
+4
+1 10 9 3
+6
+1 19 19 4 4 5
+Sample Output
+2
+0
+0
+0
+Explanation
+In the first test case, the largest number is at the last index, i.e., 4 and the middle of the array is at index 2.
+
+Therefore, first swap would be to bring 31 to the immediate left index, i.e. 3 and one more swap would be needed to bring it to index 2.
+
+Hence the minimum number of swaps would be 2.
+
+In the second, third and fourth test cases, the integer is already in the correct position. So no swaps are needed. 
+
+--------------------------------------------------------------------------------------------------------------------------
